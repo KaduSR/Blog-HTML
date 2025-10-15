@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Blog</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -26,44 +27,51 @@
             </div>
             <div class="search-container">
                 <form action="/buscar" method="GET">
-                    <input type="text" name="q" placeholder="Digite a sua busca">
+                    <input type="text" name="q" id="search-input" placeholder="Digite a sua busca">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
         </div>
     </header>
-<main class="main">
-    <div class="card">
-        <div class="card-titulo">
-            <p>15 de Outubro de 2025</p>
-            <i class="fa fa-heart-o"></i>
+    <main class="main">
+        <div class="card">
+            <div class="card-titulo">
+                <p>15 de Outubro de 2025</p>
+                <button class="favorite-button">
+                    <i class="fa fa-heart-o favorite-icon"></i>
+                </button>
+            </div>
+            <div class="card-conteudo">
+                <h2>Aprendendo JavaScript: Guia Completo para Iniciantes</h2>
+                <p>JavaScript é uma das linguagens de programação mais populares...</p>
+            </div>
         </div>
-        <div class="card-conteudo">
-            <h2>Aprendendo JavaScript: Guia Completo para Iniciantes</h2>
-            <p>JavaScript é uma das linguagens de programação mais populares e versáteis do mundo. Se você está começando sua jornada no desenvolvimento web, este guia completo para iniciantes é o ponto de partida perfeito. Vamos explorar os conceitos básicos, as melhores práticas e os recursos essenciais para dominar o JavaScript.</p>
+        <div class="card">
+            <div class="card-titulo">
+                <h5>10 de Outubro de 2025</h5>
+                <button class="favorite-button">
+                    <i class="fa fa-heart-o favorite-icon"></i>
+                </button>
+            </div>
+            <div class="card-conteudo">
+                <h2>CSS Flexbox: Layouts Responsivos Simplificados</h2>
+                <p>O CSS Flexbox é uma ferramenta poderosa para criar layouts...</p>
+            </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-titulo">
-            <h5>10 de Outubro de 2025</h5>
-            <i class="fa fa-heart-o"></i>
+        <div class="card">
+            <div class="card-titulo">
+                <h5>5 de Outubro de 2025</h5>
+                <button class="favorite-button">
+                    <i class="fa fa-heart-o favorite-icon"></i>
+                </button>
+            </div>
+            <div class="card-conteudo">
+                <h2>Introdução ao Desenvolvimento Web: HTML e CSS para Iniciantes</h2>
+                <p>Se você está começando no mundo do desenvolvimento web...</p>
+            </div>
         </div>
-        <div class="card-conteudo">
-            <h2>CSS Flexbox: Layouts Responsivos Simplificados</h2>
-            <p>O CSS Flexbox é uma ferramenta poderosa para criar layouts responsivos e flexíveis na web. Neste artigo, vamos explorar os conceitos fundamentais do Flexbox, como alinhar itens, distribuir espaço e criar designs adaptáveis que funcionam em diferentes dispositivos.</p>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-titulo">
-            <h5>5 de Outubro de 2025</h5>
-            <i class="fa fa-heart-o"></i>
-        </div>
-        <div class="card-conteudo">
-            <h2>Introdução ao Desenvolvimento Web: HTML e CSS para Iniciantes</h2>
-            <p>Se você está começando no mundo do desenvolvimento web, aprender HTML e CSS é essencial. Neste artigo, vamos explorar os fundamentos dessas duas tecnologias, desde a estrutura básica do HTML até a estilização com CSS, para que você possa criar suas primeiras páginas web.</p>
-        </div>
-</main>
-<script src="assets/js/scripts.js"></script>
+    </main>
+    <script src="assets/js/scripts.js"></script>
 
 </body>
 
