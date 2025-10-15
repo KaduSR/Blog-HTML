@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: #121214;
+    width: 1920px;
+    height: 1260px;
+}
+
+.container {
+    background-color: #17171A;
+    max-width: 1920px;
+    max-height: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.logo h1 strong:first-of-type {
+    color: #E07B67
+}
+
+.logo h1 strong:last-of-type {
+    color: #FFFFFF;
+}
+
+.search-container {
+    background-color: #202024;
+    width: 1216px;
+    height: auto;
+    border: 2px solid #252529;
+    border-radius: 8px;
+    padding: 16px 24px;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.search-container form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 16px;
+    max-height: 56px;
+    max-width: 1216px;
+}
+
+.search-container input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    gap: 16px;
+    text-align: left;
+    outline: none;
+}
+
+.search-container input text {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    color: #AFABB6;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.search-container button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    justify-items: right;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
+.search-container button:hover {
+    color: #E07B67;
+    transition: 0.3s;
+}
+
+main {
+    width: auto;
+    height: auto;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    opacity: 1;
+    transform: rotate(0deg);
+    box-sizing: border-box;
+}
+
+.card {
+    top: 291px;
+    left: 352px;
+    width: 1216px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #E07B67;
+    padding: 40px;
+    gap: 20px;
+    background-color: #17171A;
+}
+
+.card-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #E07B67;
+}
+
+.card-titulo i {
+    width: 32px;
+    height: 32px;
+    color: #FFFFFF;
+}
+
+.card-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: auto;
+    height: auto;
+}
+
+.card-conteudo h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: auto;
+    height: auto;
+}
+
+.card-conteudo p {
+    width: 1136px;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #AFABB6;
+}
+
+/* Tablet (até 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        padding: 48px 32px;
+        gap: 32px;
+    }
+
+    .search-container {
+        width: 90%;
+        padding: 12px 20px;
+    }
+
+    .search-container form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 32px;
+        gap: 16px;
+    }
+    .card-conteudo p {
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* Celular (até 600px) */
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        padding: 32px 16px;
+        gap: 24px;
+    }
+
+    .logo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .search-container {
+        width: 100%;
+        padding: 12px 16px;
+        flex-direction: column;
+    }
+
+    .search-container form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 24px;
+        gap: 16px;
+    }
+
+    .card-conteudo h2 {
+        font-size: 20px;
+    }
+
+    .card-conteudo p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .card-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
